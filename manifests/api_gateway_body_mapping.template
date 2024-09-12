@@ -1,0 +1,7 @@
+{
+ "username": "$util.urlDecode($input.params('username'))",
+ "password": "$util.escapeJavaScript($util.base64Decode($input.params('PasswordBase64'))).replaceAll("\\'","'")",
+ "protocol": "$input.params('protocol')",
+ "serverId": "$input.params('serverId')",
+ "sourceIp": "$input.params('sourceIp')"
+}
